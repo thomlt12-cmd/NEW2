@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Vịt - Bánh Crepe Sầu Tươi Làm Trong Ngày</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Tiệm Nhà Vịt</div>
+            <ul class="nav-links">
+                <li><a href="#about">Ưu điểm</a></li>
+                <li><a href="#menu">Thực đơn</a></li>
+                <li><a href="#order" class="btn-sm">Đặt bánh ngay</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="container hero-content">
+            <h1>Mềm Mướt – Béo Ngậy – Tan Chảy Vị Sầu Riêng Tươi!</h1>
+            <p>100% sầu riêng Ri6 chín cây, làm mới mỗi sáng. Giao nhanh trong 2 giờ tại khu vực nội thành.</p>
+            <div class="cta-group">
+                <a href="#order" class="btn-main">ĐẶT BÁNH NGAY - SHIP TẬN TAY</a>
+                <p class="scarcity">🔥 Chỉ còn 15 suất làm mới cho chiều nay!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Tại sao chọn bánh tại Nhà Vịt?</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <span>🕒</span>
+                    <h3>Làm trong ngày</h3>
+                    <p>Bánh không trữ đông, chỉ làm sau khi khách đặt hoặc mẻ mới mỗi sáng.</p>
+                </div>
+                <div class="feature-item">
+                    <span>🍈</span>
+                    <h3>Sầu tươi 100%</h3>
+                    <p>Nói không với hương liệu. Chỉ dùng cơm sầu Ri6 vàng óng, hạt lép.</p>
+                </div>
+                <div class="feature-item">
+                    <span>🚚</span>
+                    <h3>Ship mát lạnh</h3>
+                    <p>Bánh được bảo quản trong túi giữ nhiệt suốt quá trình vận chuyển.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2 class="section-title">Thực Đơn Hôm Nay</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="badge">Bán chạy</div>
+                    <h3>Gói Thưởng Thức (2 cái)</h3>
+                    <p class="price">75.000đ</p>
+                    <button class="btn-buy" onclick="selectProduct('Gói 2 cái')">Chọn mua</button>
+                </div>
+                <div class="menu-card highlight">
+                    <div class="badge">Tiết kiệm</div>
+                    <h3>Combo Gia Đình (5 cái)</h3>
+                    <p class="price">180.000đ <span>(Gốc 195k)</span></p>
+                    <button class="btn-buy" onclick="selectProduct('Gói 5 cái')">Chọn mua</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <div class="container order-box">
+            <h2>Gửi Đơn Hàng Ngay</h2>
+            <p>Vui lòng để lại thông tin, Nhà Vịt sẽ gọi lại xác nhận ngay!</p>
+            <form id="orderForm">
+                <input type="text" id="name" placeholder="Họ tên của bạn" required>
+                <input type="tel" id="phone" placeholder="Số điện thoại" required>
+                <select id="product">
+                    <option value="Gói 2 cái">Gói Thưởng Thức (2 cái)</option>
+                    <option value="Gói 5 cái">Combo Gia Đình (5 cái - Tặng 1)</option>
+                </select>
+                <textarea id="address" placeholder="Địa chỉ giao hàng" required></textarea>
+                <button type="submit" class="btn-submit">XÁC NHẬN ĐẶT BÁNH</button>
+            </form>
+            <div class="contact-info">
+                <p>📞 Hotline: <strong>0358392886</strong></p>
+                <p>👤 Facebook: <strong>Lê Thơm</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Tiệm Bánh Nhà Vịt - Sầu tươi nguyên chất</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
